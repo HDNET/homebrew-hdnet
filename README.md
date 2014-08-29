@@ -1,4 +1,4 @@
-### HDNET Homebrew Tap
+# HDNET Homebrew Tap
 
 ## Installation
 
