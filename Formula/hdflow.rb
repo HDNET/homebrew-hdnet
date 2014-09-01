@@ -4,11 +4,11 @@ class Hdflow < Formula
   homepage 'http://www.hdnet.de/'
   url 'http://hdflow.hdnet.de/hdflow-0.8.tar'
   sha1 '03c74c9bcd36c984c70672113056f37346564219'
-  version '0.8'
 
-  depends_on "bash-completion" => :build
+  depends_on "bash-completion"
 
   def install
-    system "cp -a * #{prefix}"
+    (prefix).install "bin/"
+    (bash_completion).install "etc/bash_completion.d/git-flow-completion.bash"
   end
 end

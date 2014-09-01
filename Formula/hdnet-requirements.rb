@@ -6,19 +6,19 @@ class HdnetRequirements < Formula
   homepage 'http://www.hdnet.de/'
   version '0.0.1'
 
-  depends_on "hdflow" => :build
-  depends_on "wget" => :build
-  depends_on "homebrew/php/php55" => :build
-  depends_on "homebrew/php/php55-xdebug" => :build
-  depends_on "homebrew/php/php55-mcrypt" => :build
-  depends_on "git" => :build
-  depends_on "mysql" => :build
-  depends_on "bash-completion" => :build
-  depends_on "npm" => :build
-  depends_on "composer" => :build
-  depends_on "homebrew/php/php55-memcached" => :build
-  depends_on "homebrew/php/php55-oauth" => :build
-  depends_on "caskroom/cask/brew-cask" => :build
+  depends_on "hdflow"
+  depends_on "wget"
+  depends_on "homebrew/php/php55"
+  depends_on "homebrew/php/php55-xdebug"
+  depends_on "homebrew/php/php55-mcrypt"
+  depends_on "git"
+  depends_on "mysql"
+  depends_on "bash-completion"
+  depends_on "npm"
+  depends_on "composer"
+  depends_on "homebrew/php/php55-memcached"
+  depends_on "homebrew/php/php55-oauth"
+  depends_on "caskroom/cask/brew-cask"
   
   def caveats
     "
