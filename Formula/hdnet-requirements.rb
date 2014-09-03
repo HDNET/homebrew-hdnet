@@ -14,12 +14,12 @@ class HdnetRequirements < Formula
   depends_on "git"
   depends_on "mysql"
   depends_on "bash-completion"
-  depends_on "npm"
+  depends_on "node"
   depends_on "composer"
   depends_on "homebrew/php/php55-memcached"
   depends_on "homebrew/php/php55-oauth"
   depends_on "caskroom/cask/brew-cask"
-  
+ 
   def caveats
     "
     Programme via cask installieren.
