@@ -17,5 +17,6 @@ class ShellEssentials < Formula
   def install
     (prefix/"etc/bash").install "hdnet-shell-essentials.sh"
     (prefix/"etc/bash").install "hdnet-inputrc"
+    (prefix/"etc/bash").install "hdnet-prompt"
   end
 end
