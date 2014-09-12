@@ -2,9 +2,7 @@ require "formula"
 
 class ShellEssentials < Formula
   homepage 'http://www.hdnet.de/'
-  url 'https://github.com/HDNET/shell-essentials/archive/master.zip'
-  version '1.0'
-  sha1 '89e35b9bbc77b2ed61ad1221b5781e91f28ae491'
+  url 'https://github.com/HDNET/shell-essentials.git'
 
   depends_on "bash-completion"
 
