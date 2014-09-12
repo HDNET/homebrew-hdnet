@@ -2,8 +2,7 @@ require "formula"
 
 class Magerun < Formula
   homepage 'http://magerun.net/'
-  url 'https://github.com/netz98/n98-magerun/archive/1.91.0.zip'
-  sha1 '987a5ec57807945463558479ff475fc294312c1a'
+  url 'https://github.com/netz98/n98-magerun.git', :tag => '1.91.0'
 
   depends_on "bash-completion"
 
