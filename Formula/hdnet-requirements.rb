@@ -4,7 +4,7 @@ class HdnetRequirements < Formula
   url 'https://raw.githubusercontent.com/HDNET/homebrew-hdnet/master/README.md'
   sha1 'b2c0580594c85a24c4fead865d9404566d05cd32'
   homepage 'http://www.hdnet.de/'
-  version '0.0.1'
+  version '0.0.2'
 
   depends_on "hdflow"
   depends_on "wget"
