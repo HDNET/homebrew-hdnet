@@ -3,7 +3,7 @@ require "formula"
 class BambooRun < Formula
   homepage 'https://github.com/HDNET/bamboo-run'
   url 'https://github.com/HDNET/bamboo-run.git'
-  version '2'
+  version '3'
 
   depends_on "bash-completion"
   depends_on "bamboo-cli"
