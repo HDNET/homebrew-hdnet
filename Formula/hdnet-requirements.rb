@@ -38,7 +38,7 @@ class HdnetRequirements < Formula
   end
 
   def install
-    system "/usr/local/bin/npm install -g less uglifycss uglify-js"
+    system "/usr/local/bin/npm install -g less@1.7.5 uglifycss uglify-js"
     system "open http://lol.ressourcenkonflikt.de/applaus.gif"
   end
 end
