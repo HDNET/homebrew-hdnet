@@ -1,6 +1,6 @@
 require "formula"
 
-class Symfony-Installer < Formula
+class SymfonyInstaller < Formula
   homepage 'http://symfony.com/'
   url 'https://github.com/symfony/symfony-installer'
 
