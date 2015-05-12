@@ -6,6 +6,10 @@ class HdnetCodingStandards < Formula
 
   keg_only "Wir brauchen nur eine Verlinkung in etc"
 
+  def phpcs_standards
+    etc+"php-code-sniffer"+"Standards"
+  end
+
   def caveats
   "
 Für Team-Black:
@@ -17,6 +21,9 @@ git config --global int.templatedir "+prefix+"/git-templates/template-black
   def install
     prefix.install "HDNET-Black"
     prefix.install "git-templates"
-    (etc+"php-code-sniffer"+"Standards").install_symlink prefix+"HDNET-Black"
+    if File.symlink? (phpcs_standards+"HDNET-Black")
+      File.delete (phpcs_standards+"HDNET-Black")
+    end
+    phpcs_standards.install_symlink prefix+"HDNET-Black"
   end
 end
