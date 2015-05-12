@@ -1,8 +1,7 @@
 class HdnetCodingStandards < Formula
   homepage "https://www.hdnet.de"
-  url "https://github.com/HDNET/coding-standards/archive/0.1.1.tar.gz"
-  sha256 "e9f49b2be1b53ddbca63417200b948885b865283957d4c3cd8ba5b7d92c78570"
-
+  url "https://github.com/HDNET/coding-standards/archive/0.1.2.tar.gz"
+  sha256 "7003ef09140256f353f090ce58d9f0e855cd2a0a99df85f283128685078d7bbd"
   depends_on "symfony2-coding-standard"
 
   keg_only "Wir brauchen nur eine Verlinkung in etc"
