@@ -11,7 +11,7 @@ class HdnetCodingStandards < Formula
   "
 Für Team-Black:
 phpcs --config-set default_standard HDNET-Black
-git config --global template "+prefix+"/git-templates/template-black
+git config --global int.templatedir "+prefix+"/git-templates/template-black
   "
   end
 
