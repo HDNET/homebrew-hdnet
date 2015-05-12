@@ -4,8 +4,6 @@ class HdnetCodingStandards < Formula
   sha256 "4728668c02d432dfa32b5d3c1785cd68892ab0a149040727f45d7c2024af985b"
   depends_on "symfony2-coding-standard"
 
-  keg_only "Wir brauchen nur eine Verlinkung in etc"
-
   def phpcs_standards
     etc+"php-code-sniffer"+"Standards"
   end
@@ -14,13 +12,13 @@ class HdnetCodingStandards < Formula
   "
 Für Team-Black:
 phpcs --config-set default_standard HDNETBlack
-git config --global int.templatedir "+prefix+"/git-templates/template-black
+git config --global init.templatedir "+opt_prefix+"/share/git-templates/template-black
   "
   end
 
   def install
     prefix.install "HDNETBlack"
-    prefix.install "git-templates"
+    share.install "git-templates"
     if File.symlink? (phpcs_standards+"HDNETBlack")
       File.delete (phpcs_standards+"HDNETBlack")
     end
