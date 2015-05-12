@@ -7,6 +7,13 @@ class HdnetCodingStandards < Formula
 
   keg_only "Wir brauchen nur eine Verlinkung in etc"
 
+  def caveats
+  	"
+Für Team-Black:
+phpcs --config-set default_standard HDNET-Black
+  	"
+  end
+
   def install
     prefix.install "HDNET-Black"
     (etc+"php-code-sniffer"+"Standards").install_symlink prefix+"HDNET-Black"
