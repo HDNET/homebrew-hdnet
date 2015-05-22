@@ -1,7 +1,9 @@
 class HdnetCodingStandards < Formula
   homepage "https://www.hdnet.de"
-  url "https://github.com/HDNET/coding-standards/archive/0.1.3.tar.gz"
-  sha256 "4728668c02d432dfa32b5d3c1785cd68892ab0a149040727f45d7c2024af985b"
+  url "https://github.com/HDNET/coding-standards/archive/0.1.4.tar.gz"
+  sha256 "84c7ddd2ffff9e51097be5726840f61ca562fbcceeac778e25d96c4a8e86f685"
+
+  depends_on "php-code-sniffer"
   depends_on "symfony2-coding-standard"
 
   def phpcs_standards
@@ -9,10 +11,8 @@ class HdnetCodingStandards < Formula
   end
 
   def caveats
-  "
-Für Team-Black:
+    "
 phpcs --config-set default_standard HDNETBlack
-git config --global init.templatedir "+opt_prefix+"/share/git-templates/template-black
   "
   end
 
@@ -23,5 +23,10 @@ git config --global init.templatedir "+opt_prefix+"/share/git-templates/template
       File.delete (phpcs_standards+"HDNETBlack")
     end
     phpcs_standards.install_symlink prefix+"HDNETBlack"
+  end
+
+  test do
+    system "pre-commit", "--version"
+    system "ls", phpcs_standards+"HDNETBlack/ruleset.xml"
   end
 end
