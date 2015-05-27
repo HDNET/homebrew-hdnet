@@ -4,6 +4,8 @@ class HdnetCodingStandards < Formula
   sha256 "84c7ddd2ffff9e51097be5726840f61ca562fbcceeac778e25d96c4a8e86f685"
 
   depends_on "php-code-sniffer"
+  depends_on "php-cs-fixer"
+  depends_on "phpmd"
   depends_on "symfony2-coding-standard"
 
   def phpcs_standards
