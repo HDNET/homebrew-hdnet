@@ -20,7 +20,6 @@ phpcs --config-set default_standard HDNETBlack
 
   def install
     prefix.install "HDNETBlack"
-    share.install "git-templates"
     if File.symlink? (phpcs_standards+"HDNETBlack")
       File.delete (phpcs_standards+"HDNETBlack")
     end
