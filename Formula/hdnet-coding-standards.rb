@@ -1,7 +1,7 @@
 class HdnetCodingStandards < Formula
   homepage "https://www.hdnet.de"
-  url "https://github.com/HDNET/coding-standards/archive/0.1.4.tar.gz"
-  sha256 "84c7ddd2ffff9e51097be5726840f61ca562fbcceeac778e25d96c4a8e86f685"
+  url "https://github.com/HDNET/coding-standards/archive/0.1.5.tar.gz"
+  sha256 "16bd7e8ae7e1c88400741aef49180524d062431b67629fd94fb81ff7e0e7ed7e"
 
   depends_on "php-code-sniffer"
   depends_on "php-cs-fixer"
