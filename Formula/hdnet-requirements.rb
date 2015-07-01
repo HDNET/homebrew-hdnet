@@ -8,17 +8,17 @@ class HdnetRequirements < Formula
 
   depends_on "hdflow"
   depends_on "wget"
-  depends_on "homebrew/php/php55"
-  depends_on "homebrew/php/php55-xdebug"
-  depends_on "homebrew/php/php55-mcrypt"
+  depends_on "homebrew/php/php56"
+  depends_on "homebrew/php/php56-xdebug"
+  depends_on "homebrew/php/php56-mcrypt"
   depends_on "git"
   depends_on "mysql"
   depends_on "bash-completion"
   depends_on "node"
   depends_on "composer"
   depends_on "shell-essentials"
-  depends_on "homebrew/php/php55-memcached"
-  depends_on "homebrew/php/php55-oauth"
+  depends_on "homebrew/php/php56-memcached"
+  depends_on "homebrew/php/php56-oauth"
   depends_on "caskroom/cask/brew-cask"
  
   def caveats
