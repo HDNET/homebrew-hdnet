@@ -20,6 +20,7 @@ class HdnetRequirements < Formula
   depends_on "homebrew/php/php56-memcached"
   depends_on "homebrew/php/php56-oauth"
   depends_on "caskroom/cask/brew-cask"
+  depends_on "hdnet-coding-standards"
  
   def caveats
     "
