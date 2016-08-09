@@ -3,7 +3,7 @@ require "formula"
 class Hdflow < Formula
   homepage 'http://www.hdnet.de/'
   url 'http://hdflow.hdnet.de/hdflow-1.1.2.tar'
-  sha1 '03c74c9bcd36c984c70672113056f37346564219'
+  sha256 'c836de5c8af8d60c2974ea761a8343ebe27e276c031d40ce9403a6c31aa34b77'
 
   depends_on "bash-completion"
 

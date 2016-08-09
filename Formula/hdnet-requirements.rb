@@ -2,7 +2,7 @@ require "formula"
 
 class HdnetRequirements < Formula
   url 'https://raw.githubusercontent.com/HDNET/homebrew-hdnet/master/README.md'
-  sha1 'b2c0580594c85a24c4fead865d9404566d05cd32'
+  sha256 '8f475a4e0c727ca2b7109708e80edf9724033ee5'
   homepage 'http://www.hdnet.de/'
   version '0.0.3'
 
