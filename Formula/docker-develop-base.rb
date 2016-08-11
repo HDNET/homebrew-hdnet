@@ -4,6 +4,8 @@ class DockerDevelopBase < Formula
   sha256 "cd33040f5dde0e682acff8f5e9e99a653b9d5f31146bb6572bc5ce1256728640"
   version "0.0.1"
 
+  depends_on "docker-ifconfig-alias"
+
   def install
     pkgshare.install "docker-compose.yml", ".env"
   end
