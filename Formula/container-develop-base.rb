@@ -1,7 +1,7 @@
-class DockerDevelopBase < Formula
-  homepage "https://github.com/HDNET/docker-develop-base"
-  url "https://github.com/HDNET/docker-develop-base/archive/master.tar.gz"
-  sha256 "cd33040f5dde0e682acff8f5e9e99a653b9d5f31146bb6572bc5ce1256728640"
+class ContainerDevelopBase < Formula
+  homepage "https://github.com/HDNET/container-develop-base"
+  url "https://github.com/HDNET/container-develop-base/archive/master.tar.gz"
+  sha256 "ec81c141ea6a172e5bb1074528e3e8dde63ad60004ae42c4b4165d5b091766dd"
   version "0.0.1"
 
   depends_on "docker-ifconfig-alias"
