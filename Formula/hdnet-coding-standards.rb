@@ -3,13 +3,13 @@ class HdnetCodingStandards < Formula
   url "https://github.com/HDNET/coding-standards/archive/0.1.7.tar.gz"
   sha256 "86f3ae6d718e8bfd2ba0ceaf9f135fdb27949007d3878b82a0905091347cfcc9"
 
-  depends_on "php-code-sniffer"
+  depends_on "php-code-sniffer@2.9"
   depends_on "php-cs-fixer"
   depends_on "phpmd"
   depends_on "symfony2-coding-standard"
 
   def phpcs_standards
-    etc+"php-code-sniffer"+"Standards"
+    etc+"php-code-sniffer@2.9"+"Standards"
   end
 
   def caveats
